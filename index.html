@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+<body class="bg">
+
+  <div class="first-col">
+  <img class="sedans-img" src="images/icon-sedans.svg" alt="">
+  <h1 class="first-h1">Sedans</h1>
+  <p class="first-p">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+    or on your next road trip.</p>
+  <button class="button-large">Learn More</button>
+  </div>
+  
+  
+  <div class="second-col">
+    <img class="sedans-img" src="images/icon-suvs.svg" alt="">
+    <h1 class="first-h1">SUVs</h1>
+    <p class="first-p">Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+      and off-road adventures.</p>
+    <button class="button-large-s">Learn More</button>
+    </div>
+
+    <div class="third-col">
+      <img class="sedans-img" src="images/icon-luxury.svg" alt="">
+      <h1 class="first-h1">Luxury</h1>
+      <p class="first-p">Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+        rental and arrive in style.</p>
+      <button class="button-large-t">Learn More</button>
+      </div>
+
+  
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+
+
+  <style>
+    /* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
+   
+  *
+  {
+    margin: 0;
+    padding: 0;
+  } 
+  
+  .bg
+  {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .first-col
+  {
+   
+    width: 200px;
+    height: 305px;
+    padding: 3%;
+    background-color: hsl(31, 77%, 52%);
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    
+  }
+  .second-col
+  {
+   
+    width: 200px;
+    height: 305px;
+    padding: 3%;
+    background-color: hsl(184, 100%, 22%);
+    
+  }
+
+  .third-col
+  {
+    width: 200px;
+    height: 305px;
+    padding: 3%;
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+
+  .sedans-img
+  {
+    margin-bottom:20px ;
+  }
+
+  .first-h1
+  {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    
+  }
+
+  .first-p
+  {
+    margin-bottom: 50px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 14px;
+    color: hsla(0, 0%, 100%, 0.75);
+  }
+
+  .button-large
+  {
+    width: 70%;
+    height: 14%;
+    color: hsl(31, 77%, 52%);
+    border-color: transparent;
+    border-radius: 20px;
+  }
+
+  .button-large-s
+  {
+    width: 70%;
+    height: 14%;
+    color: hsl(184, 100%, 22%);
+    border-color: transparent;
+    border-radius: 20px;
+  }
+
+  .button-large-t
+  {
+    width: 70%;
+    height: 14%;
+    color: hsl(179, 100%, 13%);
+    border-color: transparent;
+    border-radius: 20px;
+  }
+
+  @media (max-width:700px){
+    .bg
+  {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    height: 170vh;
+  } 
+
+  .first-col
+  {
+   
+    width: 250px;
+    height: 305px;
+    padding: 7%;
+    background-color: hsl(31, 77%, 52%);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    
+  }
+  .second-col
+  {
+   
+    width: 250px;
+    height: 305px;
+    padding: 7%;
+    background-color: hsl(184, 100%, 22%);
+    
+  }
+
+  .third-col
+  {
+    width: 250px;
+    height: 305px;
+    padding: 7%;
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-top-right-radius: 0;
+  }
+
+  }
+
+  </style>
+
+</body>
+</html>
